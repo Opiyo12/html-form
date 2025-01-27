@@ -1,0 +1,106 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+
+}
+.outercontainer{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+form{
+    width: 380px;
+    height: auto;
+    border: 2px solid #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 12px 20px #abb2b9;
+    overflow: hidden;
+}
+h2{
+    text-align: center;
+    color: dimgray;
+
+}
+.container{
+    padding: 20px;
+}
+input[type=text],
+input[type=password]{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 8px 0;
+    padding: 12px 20px;
+    outline: none;   
+}
+input[type=text]:focus,
+input[type=password]:focus{
+    outline: 1px solid #add8e6;
+}
+button{
+    border: none;
+    color: #ffd;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 8px 0;
+    transition: 0.3s;
+}
+#login-btn{
+ width: 100%;
+ text-transform: uppercase;
+ padding: 12px 20px;
+ background-color: #2873dc;
+
+}
+#login-btn:hover{
+    background-color: #1a5fc1; 
+}
+#forgot-password{
+    font-size: 14px;
+    text-decoration: none;
+    color: #2873dc;
+    padding-top: 3px;
+    float: right;
+}
+#forgot-password:hover{
+    text-decoration: underline;
+}
+.account{
+    text-align: center;
+    padding: 16px;
+    border-top: 1px solid silver;
+}
+#create-btn{
+    padding: 12px 20px;
+    color: #ffd;
+    background-color: #42b72a;
+}
+#create-btn:hover{
+    background-color: #2fa019;
+}
+/* Responsive Design */
+@media (max-width: 400px) {
+    .outercontainer {
+        max-width: 90%;
+    }
+    
+    form {
+        max-width: 100%;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
